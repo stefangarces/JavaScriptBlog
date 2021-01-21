@@ -1,81 +1,64 @@
-/* varibles */
-:root {
-    --primary: #000000;
-    --secondary: #ffffff;
-}
 
 /* reset */
-body,a,ul,li {
+body,a {
     margin: 0;
     padding: 0;
     text-decoration: none;
     background-color: cornflowerblue;
+    overflow-x: hidden;
 }
-li {
-    list-style-type: none;
-}
-
-/* base styles */
 
 nav {
     background-color: rgb(255, 255, 255);
-    position: fixed;
     width: 100%;
-    top: 0;
-    left: 0;
-    height: 5rem;
+    margin-top: -40px;
     z-index: -50;
-}
-
-/* Page title */
-h1 {
+    padding: 30px;
     font-family: 'Lobster';
     font-size: xx-large;
     text-align: center;
 }
-
-.button {
-    background: none;
-    border: 2px solid var(--primary);
-    color: var(--primary);
-    padding: 6px 12px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
-    display:s inline-block;
-}
-
-.button:hover {
-    color: #000000;
-    background: var(--secondary);
+h1 {
+    margin-bottom: 5px;
 }
 
 footer {
     background: white;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    height: 2.5rem;
+    height: 30px;
     text-align: center;
+    margin-top: 30px;
 }
 
-.button, .welcome-text {
+.welcome {
+    background: #ffffff;
+    text-align: center;
     font-family: 'Poppins';
 }
 
-.welcome-text {
-    position: fixed;
-    padding: 2%;
-    height: 100%;
-    width: 100%;
-    display: flex;
+h2 {
+    font-weight: 500;
 }
-.welcome {
+
+.flex-container {
+    display: flex;
+    font-family: 'Poppins';
+    justify-content: center;
+}
+
+.blogframe {
+    max-width: 400px;
     background: #ffffff;
-    align-items: center;
+    border: 1px solid;
+    box-shadow: 2px 4px;
+    padding: 25px;
+}
+
+h3 {
     text-align: center;
-    margin-top: 50%;
-} 
+}
 
 /* fonts */
 @font-face {
@@ -88,13 +71,18 @@ footer {
 }
 
 /* small tablet size style */
-@media screen and (min-width: 620px) {
-
+@media screen and (min-width: 650px) {
+    .blogframe {
+        padding: 10px;
+    }
 }
 
 /* large tablet size style */
-@media screen and (min-width: 960px) {
-    
+@media screen and (min-width: 1100px) {
+    .flex-container {
+        flex-direction: row;
+        align-items: center;
+    }
 }
 
 /* desktop size style */
