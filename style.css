@@ -1,18 +1,103 @@
-body {
-    padding: 0%;
-    margin: 0%;
-    background-image: url("img/backpacker.jpg");
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    height: auto;
-    z-index: -99;
+/* varibles */
+:root {
+    --primary: #000000;
+    --secondary: #ffffff;
 }
+
+/* reset */
+body,a,ul,li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background-color: cornflowerblue;
+}
+li {
+    list-style-type: none;
+}
+
+/* base styles */
 
 nav {
     background-color: rgb(255, 255, 255);
-    width: auto;
-    height: 3rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 5rem;
+    z-index: -50;
+}
+
+/* Page title */
+h1 {
+    font-family: 'Lobster';
+    font-size: xx-large;
+    text-align: center;
+}
+
+.button {
+    background: none;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+    display:s inline-block;
+}
+
+.button:hover {
+    color: #000000;
+    background: var(--secondary);
+}
+
+footer {
+    background: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+}
+
+.button, .welcome-text {
+    font-family: 'Poppins';
+}
+
+.welcome-text {
+    position: fixed;
+    padding: 2%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+.welcome {
+    background: #ffffff;
+    align-items: center;
+    text-align: center;
+    margin-top: 50%;
+} 
+
+/* fonts */
+@font-face {
+    font-family: 'Lobster';
+    src: url('fonts/Lobster-Regular.ttf');
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url('fonts/Poppins-Regular.ttf');
+}
+
+/* small tablet size style */
+@media screen and (min-width: 620px) {
+
+}
+
+/* large tablet size style */
+@media screen and (min-width: 960px) {
+    
+}
+
+/* desktop size style */
+@media screen and (min-width: 1200px) {
+    
 }
