@@ -5,21 +5,28 @@ body,a {
     padding: 0;
     text-decoration: none;
     background-color: cornflowerblue;
+    /* background-image: url(img/backpacker.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
     overflow-x: hidden;
 }
 
-nav {
+header {
     background-color: rgb(255, 255, 255);
     width: 100%;
-    margin-top: -40px;
-    z-index: -50;
-    padding: 30px;
     font-family: 'Lobster';
     font-size: xx-large;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 30px;
+    display: inline-block;
     text-align: center;
+    margin: 0 auto;
+    padding-bottom: -10%;
 }
 h1 {
-    margin-bottom: 5px;
+    margin: 0 auto;
 }
 
 footer {
@@ -36,6 +43,7 @@ footer {
     background: #ffffff;
     text-align: center;
     font-family: 'Poppins';
+    padding-top: 100%;
 }
 
 h2 {
@@ -46,6 +54,7 @@ h2 {
     display: flex;
     font-family: 'Poppins';
     justify-content: center;
+    padding-top: 10%;
 }
 
 .blogframe {
@@ -56,8 +65,31 @@ h2 {
     padding: 25px;
 }
 
+#blogframes {
+    filter: grayscale(100%);
+}
+
+.postcounter {
+    display: flex;
+    font-family: 'Poppins';
+    justify-content: center;
+    color: #000000;
+}
+
+h4 {
+    width: 20px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+}
+
 h3 {
     text-align: center;
+}
+
+.copyright {
+    font-family: 'Poppins';
+    padding: 20px;
 }
 
 /* fonts */
@@ -71,17 +103,23 @@ h3 {
 }
 
 /* small tablet size style */
-@media screen and (min-width: 650px) {
+/* @media screen and (max-width: 650px) {
     .blogframe {
-        padding: 10px;
+        padding: 25px;
+    }
+    .flex-container {
+        padding-top: -20%;
     }
 }
-
+*/ 
 /* large tablet size style */
 @media screen and (min-width: 1100px) {
     .flex-container {
         flex-direction: row;
         align-items: center;
+    }
+    body {
+        background-size: 100%;
     }
 }
 

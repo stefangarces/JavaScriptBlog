@@ -7,23 +7,32 @@
     <title>A Backpackers diary</title>
 </head>
 <body>
-    <nav>
+    <header>
         <h1>A Backpackers diary</h1>
-    </nav>
+        <!-- Add and remove blogpost's -->
+        <div class="postcounter">
+            <h4 id="remove">-</h4>
+            <h4 contenteditable="true">0</h4>
+            <h4 id="add" class="add">+</h4>
+        </div>
+    </header>
     <container class="welcome">
         <div>
             <h2>A great place to share<br /> the daily life of a backpacker</h2>
         </div>
     </container>
     <!-- "section" is the blogpost's -->
-    <div class="flex-container">
-        <div class="blogframe">
+    <div class="container">
+    <div id="Blogpost" class="flex-container">
+        <div id="Blogframes" class="blogframe">
             <h3 contenteditable="true">Blog title here...</h3>
             <p contenteditable="true">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus recusandae rem ipsum dolor quod, a repellendus aspernatur, ad vero incidunt dicta dolores eveniet officia esse laboriosam nisi magnam obcaecati quidem?</p>
         </div>
     </div>
+    </div>
     <footer>
         <p class="copyright">Copyright © 2021 A backpackers Diary</p>
         </footer>
+        <script src="script.js"></script>
 </body>
 </html>
