@@ -32,3 +32,18 @@ knapp.addEventListener("click", function(){
     post.append(container);
 })
 
+// 'addClick' function, to add a number to the "counter" when the user click on the plus button to add another blogpost.
+// Had a bug in the beginning. I could only add up to number "1", but that was because the "var clickPlus = 0;"
+// was inside the function, and that made the function add the value "0" when the function was running.
+// const counter = document.getElementById("counter");
+    
+var clickPlus = 0;
+function addClick() {
+    clickPlus += 1;
+    document.getElementById("counter").innerHTML = clickPlus;
+}
+
+function removeClick() {
+    clickMinus = clickPlus -1;
+    document.getElementById("counter").innerHTML = clickMinus;
+}
