@@ -7,13 +7,17 @@
     <title>A Backpackers diary</title>
 </head>
 <body>
+<Main>
     <header>
         <h1>A Backpackers diary</h1>
         <!-- Add and remove blogpost's -->
         <div class="postcounter">
-            <h4 id="remove" onclick="removeClick()">-</h4>
-            <h4 id="counter" contenteditable="true">0</h4>
-            <h4 id="add" onclick="addClick()" class="add">+</h4>
+            <div class="postframe">
+                <h4 id="remove" class="button">Remove post</h4>
+            </div>
+            <div class="postframe">
+                <h4 id="add" class="button">Add post</h4>
+            </div>
         </div>
     </header>
     <container class="welcome">
@@ -30,6 +34,7 @@
         </div>
     </div>
     </div>
+</Main>
     <footer>
         <p class="copyright">Copyright © 2021 A backpackers Diary</p>
         </footer>
